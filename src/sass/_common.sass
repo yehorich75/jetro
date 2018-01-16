@@ -1,5 +1,29 @@
 +font('bebas-font', bebas)
 
 body
+	font-family: Helvetica, sans-serif
+
+=bebas
 	font-family: bebas, sans-serif
 
+.button
+	font-size: 1px
+	text-transform: uppercase
+	height: 31px
+	padding: 0 13px
+	display: inline-block
+	color: #ffffff
+	text-decoration: none
+	+bebas
+
+.h3 
+	display: flex
+	font-size: 18px
+	color: #e8603c
+	text-transform: uppercase
+	text-decoration: none
+	&:after
+		content: ""
+		flex: 1
+		margin-left: 20px
+		background: url(../img/pattern.png) 0 0
