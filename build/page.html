@@ -19,13 +19,14 @@
         <p>Hello from jade/partials/_header</p>
       </header>
       <!--END header-->
+      <h1>Index page</h1>
       <header class="header">
         <div class="container">
           <div class="header__logo">
-            <div class="logo">
+            <a href="#" class="logo">
               <div class="logo__part1">JET</div>
               <div class="logo__part2">RO</div>
-            </div>
+            </a>
           </div>
           <div class="header__nav">
             <nav class="nav"><a href="#">HOME</a><a href="#">ABOUT US</a><a href="#">BLOG</a><a href="#">Portfolio</a><a href="#">CONTACT US</a></nav>
@@ -70,6 +71,26 @@
       </div>
       <div class="content">
         <div class="container">
+          <div class="features">
+            <div class="feature">
+              <div class="feature__title">
+                <div class="feature__icon"><svg class="cog"><use xlink:href="img/sprite.svg#cog"></use></svg></div>
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p class="feature__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio id qui nobis, dolore similique corrupti obcaecati fuga quasi facilis ut.</p><a href="#" class="feature__more">More</a>
+                <div class="feature"></div>
+              </div>
+              <div class="feature__title">
+                <div class="feature__icon"><svg class="check"><use xlink:href="img/sprite.svg#check"></use></svg></div>
+                <h2>Distinctio id qui nobis.</h2>
+                <p class="feature__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio id qui nobis, dolore similique corrupti obcaecati fuga quasi facilis ut.</p><a href="#" class="feature__more">More</a>
+                <div class="feature"></div>
+              </div>
+              <div class="feature__title">
+                <div class="feature__icon"><svg class="user"><use xlink:href="img/sprite.svg#user"></use></svg></div>
+                <h2>Obcaecati fuga quasi.</h2>
+                <p class="feature__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio id qui nobis, dolore similique corrupti obcaecati fuga quasi facilis ut.</p><a href="#" class="feature__more">More</a></div>
+            </div>
+          </div>
           <div class="block">
             <div class="works">
               <h3>Recent Works
@@ -81,7 +102,7 @@
                 <div class="work">
                   <div class="work__image"></div>
                   <div class="work__title"></div>
-                  <div class="work__date"></div>
+                  <div class="work__date">August 24, 2015</div>
                 </div>
                 <div class="work">
                   <div class="work__image"></div>
@@ -124,7 +145,6 @@
           </div>
         </div>
       </div>
-      <h1>Index page</h1>
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->
