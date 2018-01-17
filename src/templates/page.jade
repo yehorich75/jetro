@@ -4,8 +4,8 @@ title: Index Page
 extends layouts/_layout
 block content
 
-  h1 Index page
 
+  h1 Index page
   header.header
     .container
       .header__wrap
@@ -24,6 +24,7 @@ block content
   .hero
     .container
       .slider
+        mixin icon
         .slider__next
           +icon('arrow')
         .slider__prev
@@ -58,7 +59,6 @@ block content
       .features
         .feature
           .feature__title
-            mixin icon
             .feature__icon
               +icon('cog')
             h2 Lorem ipsum dolor sit.
