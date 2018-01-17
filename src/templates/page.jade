@@ -23,25 +23,26 @@ block content
 
   .hero
     .container
-      .slider
-        mixin icon
-        .slider__next
-          +icon('icon-arrow')
-        .slider__prev
-          +icon('icon-arrow')
-        .slider__slides.js-hero
-          .slider__slide.slide(style="background: url(img/slide.jpg)")
-            .slide__content
-              h3.slide__title
-              p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-          .slider__slide.slide(style="background: url(img/slide.jpg)")
-            .slide__content
-              h3.slide__title
-              p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-          .slider__slide.slide(style="background: url(img/slide.jpg)")
-            .slide__content
-              h3.slide__title
-              p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      .hero__wrap
+        .slider
+          mixin icon
+          .slider__next
+            +icon('icon-arrow')
+          .slider__prev
+            +icon('icon-arrow')
+          .slider__slides.js-hero
+            .slider__slide.slide(style="background: url(img/slide.jpg)")
+              .slide__content
+                h3.slide__title
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            .slider__slide.slide(style="background: url(img/slide.jpg)")
+              .slide__content
+                h3.slide__title
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            .slider__slide.slide(style="background: url(img/slide.jpg)")
+              .slide__content
+                h3.slide__title
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 
   .thumbs
     ul 
