@@ -5,6 +5,8 @@
 .container
 	max-width: 940px
 	margin: 0 auto
+	+r(960)
+		margin: 0 10px
 
 .header
 	&__wrap
@@ -46,7 +48,7 @@
 		padding-bottom: 42%
 	&__next, &__prev
 		position: absolute
-		top: 45%
+		top: 43%
 		left: 3%
 		cursor: pointer
 		z-index: 100
@@ -55,6 +57,30 @@
 		left: auto
 		right: 20px
 		transform: rotate(-180deg)
+
+.slide
+	position: relative
+	height: 0
+	padding-bottom: 42%
+	.slide__content
+		position: absolute
+		padding: 20px 30px
+		background: rgba(232,102,60,.8)
+		left: 37px
+		bottom: 31px
+		max-width: 416px
+	&__title
+		font-size: 18px
+		color: #ffffff
+		text-decoration: none
+		text-transform: uppercase
+		margin-bottom: 14px
+		+bebas
+	p 
+		font-size: 12px
+		line-height: 1.4
+		color: #ffffff
+		
 
 .hero
 	overflow: hidden
