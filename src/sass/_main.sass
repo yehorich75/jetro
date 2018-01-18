@@ -1,6 +1,4 @@
-.block
-	display: flex
-	// remove this
+@import vars
 
 .container
 	max-width: 940px
@@ -20,7 +18,7 @@
 
 .logo
 	font-size: 0
-	color: #e8603c
+	color: $orange-color
 	text-decoration: none
 	+bebas
 	&__part1, &__part2
@@ -39,7 +37,7 @@
 		color: #b9b9b9
 		margin-left: 24px
 		&.is-active, &:hover
-		 color: #e8603c
+		 color: $orange-color
 
 .slider
 	position: relative
@@ -101,13 +99,11 @@
 			margin-left: 10px
 
 .thumbs
+	margin-top: 14px
 	ul 
 		display: grid
 		grid-template-columns: repeat(6,1fr)
 		grid-gap: 17px
-	li 
-		background: red
-		height: 20px
 	a 
 		display: block
 		height: 0
@@ -115,3 +111,66 @@
 		padding-bottom: 60%
 		background-size: cover
 		background-position: 50% 50%
+
+.features
+	margin-top: 38px
+	display: grid
+	grid-template-columns: repeat(3,1fr)
+	grid-gap: 17px
+	margin-bottom: 48px
+	.feature
+		&__title
+			display: flex
+			margin-bottom: 32px
+		&__icon
+			flex: 0
+			margin-right: 18px
+			.icon
+				font-size: 46px
+				fill: $orange-color
+		h2 
+			color: $orange-color
+			text-transform: uppercase
+			font-size: 18px
+			line-height: 1.35
+			flex: 1
+			+bebas
+		&__text
+			margin-top: 32px
+			font-size: 14px
+			line-height: 1.5
+			color: #414141
+			margin-bottom: 24px
+			padding-right: 20px
+			p
+				margin-bottom: 1em
+
+.works
+	display: grid
+	grid-template-columns: repeat(4,1fr)
+	grid-gap: 17px
+	margin-bottom: 48px
+	.work
+		text-decoration: none
+		&__image
+			margin-bottom: 15px
+			img 
+				display: block
+				min-width: 100%
+		&__title
+			font-size: 16px
+			text-transform: uppercase
+			font-weight: bold
+			color: #b9b9b9
+			margin-bottom: 6px
+		&__bottom
+			border: 1px solid #dbdbdb
+			border-top: none
+			padding: 15px
+		&__date
+			color: $orange-color
+			font-size: 14px
+			font-weight: bold
+			text-transform: uppercase
+
+	
