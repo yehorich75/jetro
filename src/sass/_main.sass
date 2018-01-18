@@ -12,9 +12,20 @@
 		text-align: left
 		padding: 22px 0
 		align-items: baseline
+		+r(620)
+			display: block
+			text-align: center
 	&__logo
+		+r(620)
+			margin-bottom: 20px
 	&__nav
 		margin-left: auto
+		position: relative
+		top: -6px
+		+r(620)
+			top: 0
+			text-align: center
+			line-height: 2
 
 .logo
 	font-size: 0
@@ -29,8 +40,6 @@
 
 .nav 
 	font-size: 16px
-	position: relative
-	top: -6px
 	+bebas
 	a 
 		text-decoration: none
@@ -67,6 +76,10 @@
 		left: 37px
 		bottom: 31px
 		max-width: 416px
+		+r(620)
+			background: none
+			top: 10px
+			bottom: auto
 	&__title
 		font-size: 18px
 		color: #ffffff
@@ -87,7 +100,7 @@
 		&:before, &:after
 			position: absolute
 			height: 60px
-			background: #f2ae9c
+			background: $pink-color
 			content: ""
 			width: 1000px
 			top: 0
@@ -104,6 +117,8 @@
 		display: grid
 		grid-template-columns: repeat(6,1fr)
 		grid-gap: 17px
+		+r(620)
+			grid-template-columns: repeat(2,1fr)
 	a 
 		display: block
 		height: 0
@@ -118,13 +133,22 @@
 	grid-template-columns: repeat(3,1fr)
 	grid-gap: 17px
 	margin-bottom: 48px
+	+r(840)
+		display: block
 	.feature
+		+r(840)
+			margin-bottom: 50px
 		&__title
 			display: flex
 			margin-bottom: 32px
+			+r(840)
+				display: block
+				margin-bottom: 10px
 		&__icon
 			flex: 0
 			margin-right: 18px
+			+r(840)
+				margin-bottom: 10px
 			.icon
 				font-size: 46px
 				fill: $orange-color
@@ -132,6 +156,7 @@
 			color: $orange-color
 			text-transform: uppercase
 			font-size: 18px
+			font-weight: normal
 			line-height: 1.35
 			flex: 1
 			+bebas
@@ -142,6 +167,8 @@
 			color: #414141
 			margin-bottom: 24px
 			padding-right: 20px
+			+r(600)
+				margin: 17px 0
 			p
 				margin-bottom: 1em
 
@@ -150,27 +177,85 @@
 	grid-template-columns: repeat(4,1fr)
 	grid-gap: 17px
 	margin-bottom: 48px
+	+r(700)
+		grid-template-columns: repeat(2,1fr)
 	.work
+		display: block
 		text-decoration: none
 		&__image
-			margin-bottom: 15px
 			img 
 				display: block
 				min-width: 100%
 		&__title
 			font-size: 16px
 			text-transform: uppercase
-			font-weight: bold
 			color: #b9b9b9
 			margin-bottom: 6px
 		&__bottom
 			border: 1px solid #dbdbdb
 			border-top: none
 			padding: 15px
+			+bebas
 		&__date
 			color: $orange-color
-			font-size: 14px
-			font-weight: bold
+			font-size: 11px
 			text-transform: uppercase
+
+.footer
+	color: #fff
+	font-size: 12px
+	line-height: 1.5
+	&__wrap
+		position: relative
+		background: $orange-color
+		display: grid
+		grid-template-columns: repeat(3,1fr)
+		grid-gap: 17px
+		+r(600)
+			display: block
+		&:before, &:after
+			position: absolute
+			height: 100%
+			background: $pink-color
+			content: ""
+			width: 100%		
+			top: 0
+		&:before
+			right: 100%
+			margin-right: 10px
+		&:after
+			left: 100%
+			margin-left: 10px
+	&__text
+		padding: 0 0 36px 39px
+		p
+			margin-bottom: 1em
+	h2 
+		text-transform: uppercase
+		font-size: 20px
+		font-weight: normal
+		line-height: 1.5
+		padding: 39px 36px
+		+bebas
+		+r(500)
+			margin-bottom: 5px
+	&__col
+		+r(600)
+			margin-bottom: 20px
+	&__whitelinks
+		a
+			color: #ffffff
+			text-decoration: none
+
+.tweet
+	margin-bottom: 1.2em
+	&__content
+		margin-bottom: 3em
+	a 
+		color: rgba(255, 255, 255, .8)
+		text-decoration: none
+	
+		
+
 
 	
