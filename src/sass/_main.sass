@@ -1,4 +1,4 @@
-@import vars
+
 
 .container
 	max-width: 940px
@@ -183,15 +183,27 @@
 			height: 400px
 			margin-bottom: 38px
 	&__info
+		display: grid
+		grid-template-columns: 1fr 3fr
 		&--subscribe
-			border: 1px solid $orange-color
-			padding: 12px 14px
-			text-transform: uppercase
-			margin-bottom: 11px
-			width: 50%
-			input
-				+bebas
-				color: $orange-color
+			p
+				input
+					+bebas
+					color: $orange-color
+					width: 50%
+					border: 1px solid $orange-color
+					padding: 12px 14px
+					text-transform: uppercase
+					margin-bottom: 11px
+				textarea
+					+bebas
+					height: 206px
+					min-height: 118px
+					width: 100%
+					border: 1px solid $orange-color
+					padding: 12px 14px
+					text-transform: uppercase
+					margin-bottom: 11px
 	&__sidebar
 
 	
