@@ -175,6 +175,7 @@
 	display: grid
 	grid-template-columns: 3fr 1fr
 	grid-gap: 17px
+	margin-bottom: 38px
 	+r(700)
 		display: block
 	&__map
@@ -187,7 +188,7 @@
 		grid-template-columns: 1fr 3fr
 		&--subscribe
 			p
-				input
+				input[type="text"]
 					+bebas
 					color: $orange-color
 					width: 50%
@@ -195,6 +196,13 @@
 					padding: 12px 14px
 					text-transform: uppercase
 					margin-bottom: 11px
+				input[type="submit"]
+					+bebas
+					color: #ffffff
+					background-color: $orange-color
+					width: 70px
+					padding: 10px 14px
+					text-transform: uppercase
 				textarea
 					+bebas
 					height: 206px
